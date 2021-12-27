@@ -7,6 +7,7 @@
 * GItHub: [Lebedev-023046](https://github.com/Lebedev-023046)
 * LinkedIn: [Dmitry Lebedev](https://www.linkedin.com/in/dmitry-lebedev-023046/)
 * Discord: Lebedev-023046#9826
+
 # Summary
 
 I have basic experience with python backend development and am working on another project in this area. But now the main task is to study the basics of the frontend for its implementation in future projects. I enjoy programming. Moreover I don't like superficial work without understanding the main logic of the technology. And I hope that by the end of the course I will be experienced enough to be a perfect employee for it-companies.
@@ -16,6 +17,7 @@ I have basic experience with python backend development and am working on anothe
 * CSS
 * Python + django
 * Editors: VS Code, PyCharm
+
 # Code examples
 
 ```

@@ -5,39 +5,48 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     height: 100%;
     max-width: 1024px;
     margin: auto;
     background-color: blanchedalmond;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100%;
     margin-top: 25px;
-    background-color: white;
+    background-color: rgb(185, 245, 226);
 }
 
 .picture img {
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     padding: 15px;
 }
-.picture p{
+
+.rsschool img {
+    width: 450px;
+    height: 150px;
+}
+
+.picture p {
     text-align: center;
 }
 
-li{
+li {
     font-size: 20px;
 }
-code{
+
+code {
     font-size: 15px;
 }
 
@@ -45,43 +54,49 @@ code{
     display: flex;
     flex-direction: column;
     width: 40%;
+    background-color: rgb(30, 81, 105);
+    color: rgb(185, 245, 226);
+    border: 1px solid rgb(30, 81, 105);
+    border-top-right-radius: 5%;
 }
 
 .right {
     display: flex;
     flex-direction: column;
     width: 60%;
-    padding: 0px 0px 0px 50px;
+    padding: 0px 50px 0px 50px;
+    background-color: rgb(185, 245, 226);
+    color: rgb(30, 81, 105);
 }
 
 /* HEADER */
-header{
-    background-color: red;
+header {
+    background-color: rgb(185, 245, 226);
 }
 
-.menu ul{ 
+.menu ul { 
     display: flex;
     justify-content: space-around;
     list-style: none;
 }
 
-.menu a{
+.menu a {
     display: block;
     padding: 7px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
-    color: white;
+    color: rgb(30, 81, 105);
     transition: .5s;
 }
 
-.menu a:hover{
-    background-color: white;
-    color: red; 
+.menu a:hover {
+    background-color: rgb(30, 81, 105);
+    color: rgb(185, 245, 226); 
 }
 
 /* MAIN BODY */
-.main-body{
+.main-body {
     display: flex;
     flex: 1 1 auto;
 
@@ -94,111 +109,129 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    align-items: center;
+    background-color: white;
+    border: 2px solid rgb(185, 245, 226);
+    border-top-left-radius: 45%;
+    border-bottom-right-radius: 45%; 
 }
 
-.position{
+.position {
     font-size: 20px;
 }
 
-.contacts ul, .skills ul, .code-exes ul{
+.contacts ul,
+.skills ul,
+.code-exes ul {
     list-style: none;
     padding: 0px 15px 15px 15px;
 }
 
-.contacts h2, .skills h2, .code-exes h2, .langs h2, .about-me h2, .education h2{
+.contacts h2,
+.skills h2, 
+.code-exes h2, 
+.langs h2, 
+.about-me h2, 
+.education h2 {
     text-transform: uppercase;
     text-align: center;
     padding: 12px 0px 12px 0px;
 }
 
-.contacts .email{
+.contacts .email {
     background-image: url("assets/icons/email.svg");
     background-repeat: no-repeat;
     padding-left: 25px;
 }
 
-.contacts .phone{
+.contacts .phone {
     background-image: url("assets/icons/phone.svg");
     background-repeat: no-repeat;
     padding-left: 25px;
 }
 
-.contacts .github{
+.contacts .github {
     background-image: url("assets/icons/github.svg");
     background-repeat: no-repeat;
     padding-left: 25px;
 }
 
-.contacts .linkedin{
+.contacts .linkedin {
     background-image: url("assets/icons/linkedin.svg");
     background-repeat: no-repeat;
     padding-left: 25px;
 }
 
-.contacts .discord{
+.contacts .discord {
     background-image: url("assets/icons/discord.svg");
     background-repeat: no-repeat;
     padding-left: 25px;
 }
 
-.skills li, .contacts li{
+.skills li, .contacts li {
     padding-bottom: 7px;
 }
 
-.skills .html{
+.skills .html {
     background-image: url("assets/icons/html.svg");
     background-repeat: no-repeat;
     padding-left: 25px;
 }
 
-.skills .css{
+.skills .css {
     background-image: url("assets/icons/css.svg");
     background-repeat: no-repeat;
     padding-left: 25px;
 } 
 
-.skills .python{
+.skills .python {
     background-image: url("assets/icons/python.svg");
     background-repeat: no-repeat;
     padding-left: 25px;
 } 
 
-.skills .git{
+.skills .git {
     background-image: url("assets/icons/git.svg");
     background-repeat: no-repeat;
     padding-left: 25px;
 } 
 
-.skills .editors{
+.skills .editors {
     background-image: url("assets/icons/vs-code.svg");
     background-repeat: no-repeat;
     padding-left: 25px;
 } 
 
-.contacts li{
+.contacts li {
     text-decoration: none;
 }
 
-.contacts a{
-    color: #000;
+.contacts a {
+    color: rgb(185, 245, 226);
     text-decoration: none;
 }
 
-pre{
-    background-color: rgb(231, 230, 230);
+pre {
+    background-color: rgb(9, 63, 88);
+    color:rgb(129, 214, 187);
     padding: 0px 15px 0px 15px;
 }
 
-.langs ul, .education ul{
+.blog a {
+    color: rgb(30, 81, 105);
+    text-decoration: none;
+}
+
+.langs ul, 
+.education ul {
     padding: 0px 15px 15px 30px;
 }
 
-.education ul ul{
+.education ul ul {
     padding: 0px 15px 0px 30px;
 }
 
-.about-me p{
+.about-me p {
     padding: 0px 15px 0px 0px;
     text-align: justify;
     text-indent: 25px;
@@ -206,14 +239,15 @@ pre{
 }
 
 /* FOOTER */
-footer{
+footer {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(117, 50, 50);
+    background-color: rgb(139, 226, 222);
+    border: 1px solid rgb(139, 226, 222);
 }
 
 
-.year{
+.year {
     font-size: 30px;
     display: flex;
     align-items: center;

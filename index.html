@@ -22,9 +22,9 @@
             </nav>
         </header>
         <main class="main-body">
-                <section class="left">
+                <div class="left">
                     <figure class="picture">
-                        <p><img src="assets/img/picture.jpg" width="350px" height="350px" alt="Photo"></p>
+                        <p><img src="assets/img/picture.jpg" alt="Photo"></p>
                     </figure>
                     <article id="contacts-id" class="contacts">
                         <h2>My contacts</h2>
@@ -48,36 +48,35 @@
                     </article>
                     <article id="code-id" class="code-exes">
                         <h2>Code examples</h2>
-                        <pre>
-                            <code>
+                        <code>
+                            <pre>
     def binary_search(list, item):
     low = 0
     high = len(list)-1
-    
-    while low <= high:
+
+    while low &lt;= high:
         mid = (low + high) // 2
         guess = list[mid]
         if guess == item: 
             return mid
-        elif guess < item:
+        elif guess &lt; item:
             low = mid + 1
         else:
             high = mid - 1
     return None
-                            </code>
-                        </pre>
+                            </pre>
+                        </code>
                         
                     </article>
-                </section>
-                <section class="right">
-                    <article class="info">
+                </div>
+                <div class="right">
+                    <div class="info">
                         <div class="common">
                             <span class="name">Dmitry Lebedev</span>
                             <br>
                             <span class="position">Future Front-end developer</span>
                         </div>
-                        
-                    </article>
+                    </div>
  
                     <article id="summary-id" class="about-me">
                         <h2>About me</h2>
@@ -101,8 +100,8 @@
                             <li>Comprehensive course in developing web applications with Python(it-academy)
                                 <ul>
                                     <li>Project example:
-                                        <ul>
-                                            <li><a href="">Blog</a></li>
+                                        <ul class="blog">
+                                            <li><a href="https://github.com/Lebedev-023046/django-book">Blog</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -121,11 +120,11 @@
                             </li>
                         </ul>
                     </article>
-                </section>
+                </div>
         </main>
         <footer>
             <div class="rsschool">
-                <a href="https://rs.school/" target="blank"><img src="assets/logo/rs_school_js.svg" alt="rsschool" width="450px" height="150px"></a>
+                <a href="https://rs.school/" target="blank"><img src="assets/logo/rs_school_js.svg" alt="rsschool"></a>
             </div>
             <div class="github">
                 <a href="https://github.com/Lebedev-023046" target="blank"><img src="assets/logo/github.svg" alt=""></a>

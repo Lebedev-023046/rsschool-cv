@@ -8,7 +8,7 @@
     <title>CV</title>
 </head>
 <body>
-    <main class="wrapper">
+    <div class="wrapper">
         <header>
             <nav class="menu">
                 <ul>
@@ -21,73 +21,121 @@
                 </ul>
             </nav>
         </header>
-        <section class="main-body">
-            <section class="left">
-                <figure class="picture">
-                    <p><img src="picture.jpg" width="350px" height="350px" alt="Photo"></p>
-                </figure>
-                <article class="contacts">
-                    <h2>My contacts</h2>
-                    <ul>
-                        <li>Email</li>
-                        <li>Phone</li>
-                        <li>GitHub</li>
-                        <li>LinkedIn</li>
-                        <li>Discord</li>
-                    </ul>
-                </article>
-                <article class="skills">
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Python + django</li>
-                        <li>Git</li>
-                        <li>Editors: VS Code, PyCharm</li>
-                    </ul>
-                </article>
-                <article class="code-exes">
-                    <h2>Code examples</h2>
-                    <pre>
-                        <code>
-def binary_search(list, item):
-low = 0
-high = len(list)-1
-
-while low <= high:
-    mid = (low + high) // 2
-    guess = list[mid]
-    if guess == item: 
-        return mid
-    elif guess < item:
-        low = mid + 1
-    else:
-        high = mid - 1
-return None
-                        </code>
-                    </pre>
-                    
-                </article>
-
-                <article class="langs">
-                    <h2>Languages</h2>
-                    <ul>
-                        <li>Russian</li>
-                        <li>Belarussian</li>
-                        <li>English
-                            <ul>
-                                <li>Intermediate</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </article>
-
-            </section>
-            <section class="right">
-                RIGHT
-            </section>
-        </section>
+        <main class="main-body">
+                <section class="left">
+                    <figure class="picture">
+                        <p><img src="assets/img/picture.jpg" width="350px" height="350px" alt="Photo"></p>
+                    </figure>
+                    <article class="contacts">
+                        <h2>My contacts</h2>
+                        <ul>
+                            <li>Email: <a href="lebedev.023046@gmail.com">lebedev.023046@gmail.com</a></li>
+                            <li>Phone: +375 44 799-79-94</li>
+                            <li>GitHub: <a href="https://github.com/Lebedev-023046">Lebedev-023046</a></li>
+                            <li>LinkedIn: <a href="https://www.linkedin.com/in/dmitry-lebedev-023046/">Dmitry Lebedev</a></li>
+                            <li>Discord: Lebedev-023046#9826</li>
+                        </ul>
+                    </article>
+                    <article class="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Python + django</li>
+                            <li>Git</li>
+                            <li>Editors: VS Code, PyCharm</li>
+                        </ul>
+                    </article>
+                    <article class="code-exes">
+                        <h2>Code examples</h2>
+                        <pre>
+                            <code>
+    def binary_search(list, item):
+    low = 0
+    high = len(list)-1
+    
+    while low <= high:
+        mid = (low + high) // 2
+        guess = list[mid]
+        if guess == item: 
+            return mid
+        elif guess < item:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return None
+                            </code>
+                        </pre>
+                        
+                    </article>
+                </section>
+                <section class="right">
+                    <article class="info">
+                        <div class="common">
+                            <span class="name">Dmitry Lebedev</span>
+                            <br>
+                            <span class="position">Future Front-end developer</span>
+                        </div>
+                        
+                    </article>
+ 
+                    <article class="about-me">
+                        <h2>About me</h2>
+                        <p>I have basic experience with python backend development and am working on another project in this area.
+                            But now the main task is to study the basics of the frontend for its implementation in future projects.
+                            I enjoy programming. Moreover I don't like superficial work without understanding the main logic of
+                            the technology. And I hope that by the end of the course I will be experienced enough to be a perfect
+                            employee for it-companies.
+                        </p>
+                    </article>
+                    <article class="education">
+                        <h2>Education and courses</h2>
+                        <ul>
+                            <li>Belarussian State University, 2020-2024
+                                <ul>
+                                    <li>perspective bachelor's degree</li>
+                                </ul>
+                            </li>
+                            <li>Fundamentals of Computer Science (it-academy)</li>
+                            <li>The basics of HTML and CSS(it-academy)</li>
+                            <li>Comprehensive course in developing web applications with Python(it-academy)
+                                <ul>
+                                    <li>Project example:
+                                        <ul>
+                                            <li><a href="">Blog</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="langs">
+                        <h2>Languages</h2>
+                        <ul>
+                            <li>Russian</li>
+                            <li>Belarussian</li>
+                            <li>English
+                                <ul>
+                                    <li>Intermediate</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+        </main>
+        <footer>
+            <div class="rsschool">
+                <a href="https://rs.school/" target="blank"><img src="assets/logo/rs_school_js.svg" alt="rsschool" width="450px" height="150px"></a>
+            </div>
+            <div class="github">
+                <a href="https://github.com/Lebedev-023046" target="blank"><img src="assets/logo/github.svg" alt=""></a>
+            </div>
+            <div class="year">
+                <p><b>Created in 2021</b></p>
+            </div>
+        </footer>
         
-    </main>
+        
+    </div>
 </body>
 </html>

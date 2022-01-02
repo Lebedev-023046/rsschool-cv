@@ -5,18 +5,26 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100%;
+}
+
 body{
+    height: 100%;
     max-width: 1024px;
     margin: auto;
     background-color: blanchedalmond;
 }
 
 .wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     margin-top: 25px;
     background-color: white;
 }
 
-img {
+.picture img {
     border-radius: 50%;
     padding: 15px;
 }
@@ -32,11 +40,16 @@ code{
 }
 
 .left {
+    display: flex;
+    flex-direction: column;
     width: 40%;
 }
 
 .right {
+    display: flex;
+    flex-direction: column;
     width: 60%;
+    padding: 0px 0px 0px 50px;
 }
 
 /* HEADER */
@@ -55,10 +68,30 @@ code{
     color: rgb(57, 38, 78);
 }
 
+a{
+    text-decoration: none;
+}
+
 
 /* MAIN BODY */
 .main-body{
     display: flex;
+    flex: 1 1 auto;
+
+}
+
+.info {
+    font-size: 35px;
+    height: 354px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.position{
+    font-size: 20px;
 }
 
 .contacts ul, .skills ul, .code-exes ul{
@@ -66,9 +99,10 @@ code{
     padding: 0px 15px 15px 15px;
 }
 
-.contacts h2, .skills h2, .code-exes h2, .langs h2{
+.contacts h2, .skills h2, .code-exes h2, .langs h2, .about-me h2, .education h2{
     text-transform: uppercase;
     text-align: center;
+    padding: 12px 0px 12px 0px;
 }
 
 .contacts li{
@@ -84,12 +118,34 @@ pre{
     padding: 0px 15px 0px 15px;
 }
 
-.langs ul{
+.langs ul, .education ul{
     padding: 0px 15px 15px 30px;
 }
 
+.education ul ul{
+    padding: 0px 15px 0px 30px;
+}
+
+.about-me p{
+    padding: 0px 15px 0px 0px;
+    text-align: justify;
+    text-indent: 25px;
+    font-size: 20px;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: space-between;
+}
 
 
+.year{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
 
 
 

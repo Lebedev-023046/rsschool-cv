@@ -1,4 +1,97 @@
+/* COMMON STYLES */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+body{
+    max-width: 1024px;
+    margin: auto;
+    background-color: blanchedalmond;
+}
+
+.wrapper{
+    margin-top: 25px;
+    background-color: white;
+}
+
+img {
+    border-radius: 50%;
+    padding: 15px;
+}
+.picture p{
+    text-align: center;
+}
+
+li{
+    font-size: 20px;
+}
+code{
+    font-size: 15px;
+}
+
+.left {
+    width: 40%;
+}
+
+.right {
+    width: 60%;
+}
+
+/* HEADER */
+.menu ul{ 
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.menu a{
+    display: block;
+    padding: 7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(57, 38, 78);
+}
+
+
+/* MAIN BODY */
+.main-body{
+    display: flex;
+}
+
+.contacts ul, .skills ul, .code-exes ul{
+    list-style: none;
+    padding: 0px 15px 15px 15px;
+}
+
+.contacts h2, .skills h2, .code-exes h2, .langs h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contacts li{
+    text-decoration: none;
+}
+
+.contacts a{
+    color: rgb(57, 38, 78);;
+}
+
+pre{
+    background-color: rgb(231, 230, 230);
+    padding: 0px 15px 0px 15px;
+}
+
+.langs ul{
+    padding: 0px 15px 15px 30px;
+}
+
+
+
+
+
+
+
+

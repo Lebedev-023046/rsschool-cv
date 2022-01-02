@@ -4,9 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>CV</title>
 </head>
 <body>
-    
+    <main class="wrapper">
+        <header>
+            <nav class="menu">
+                <ul>
+                    <li><a href="">My contacts</a></li>
+                    <li><a href="">Summary</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="">Code examples</a></li>
+                    <li><a href="">Education and courses</a></li>
+                    <li><a href="">Languages</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="main-body">
+            <section class="left">
+                <figure class="picture">
+                    <p><img src="picture.jpg" width="350px" height="350px" alt="Photo"></p>
+                </figure>
+                <article class="contacts">
+                    <h2>My contacts</h2>
+                    <ul>
+                        <li>Email</li>
+                        <li>Phone</li>
+                        <li>GitHub</li>
+                        <li>LinkedIn</li>
+                        <li>Discord</li>
+                    </ul>
+                </article>
+                <article class="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Python + django</li>
+                        <li>Git</li>
+                        <li>Editors: VS Code, PyCharm</li>
+                    </ul>
+                </article>
+                <article class="code-exes">
+                    <h2>Code examples</h2>
+                    <pre>
+                        <code>
+def binary_search(list, item):
+low = 0
+high = len(list)-1
+
+while low <= high:
+    mid = (low + high) // 2
+    guess = list[mid]
+    if guess == item: 
+        return mid
+    elif guess < item:
+        low = mid + 1
+    else:
+        high = mid - 1
+return None
+                        </code>
+                    </pre>
+                    
+                </article>
+
+                <article class="langs">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>Russian</li>
+                        <li>Belarussian</li>
+                        <li>English
+                            <ul>
+                                <li>Intermediate</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+
+            </section>
+            <section class="right">
+                RIGHT
+            </section>
+        </section>
+        
+    </main>
 </body>
 </html>

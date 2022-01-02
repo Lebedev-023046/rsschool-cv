@@ -7,6 +7,8 @@
 
 html{
     height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -53,6 +55,10 @@ code{
 }
 
 /* HEADER */
+header{
+    background-color: red;
+}
+
 .menu ul{ 
     display: flex;
     justify-content: space-around;
@@ -65,13 +71,14 @@ code{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
-    color: rgb(57, 38, 78);
+    color: white;
+    transition: .5s;
 }
 
-a{
-    text-decoration: none;
+.menu a:hover{
+    background-color: white;
+    color: red; 
 }
-
 
 /* MAIN BODY */
 .main-body{
@@ -105,12 +112,77 @@ a{
     padding: 12px 0px 12px 0px;
 }
 
+.contacts .email{
+    background-image: url("assets/icons/email.svg");
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+.contacts .phone{
+    background-image: url("assets/icons/phone.svg");
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+.contacts .github{
+    background-image: url("assets/icons/github.svg");
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+.contacts .linkedin{
+    background-image: url("assets/icons/linkedin.svg");
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+.contacts .discord{
+    background-image: url("assets/icons/discord.svg");
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+.skills li, .contacts li{
+    padding-bottom: 7px;
+}
+
+.skills .html{
+    background-image: url("assets/icons/html.svg");
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+.skills .css{
+    background-image: url("assets/icons/css.svg");
+    background-repeat: no-repeat;
+    padding-left: 25px;
+} 
+
+.skills .python{
+    background-image: url("assets/icons/python.svg");
+    background-repeat: no-repeat;
+    padding-left: 25px;
+} 
+
+.skills .git{
+    background-image: url("assets/icons/git.svg");
+    background-repeat: no-repeat;
+    padding-left: 25px;
+} 
+
+.skills .editors{
+    background-image: url("assets/icons/vs-code.svg");
+    background-repeat: no-repeat;
+    padding-left: 25px;
+} 
+
 .contacts li{
     text-decoration: none;
 }
 
 .contacts a{
-    color: rgb(57, 38, 78);;
+    color: #000;
+    text-decoration: none;
 }
 
 pre{
@@ -137,6 +209,7 @@ pre{
 footer{
     display: flex;
     justify-content: space-between;
+    background-color: rgb(117, 50, 50);
 }
 
 

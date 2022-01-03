@@ -238,6 +238,11 @@ pre {
     font-size: 20px;
 }
 
+.name {
+    font-weight: bold;
+    font-size: 40px;
+}
+
 /* FOOTER */
 footer {
     display: flex;

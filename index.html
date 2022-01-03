@@ -4,9 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>CV</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <header>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#contacts-id">My contacts</a></li>
+                    <li><a href="#summary-id">Summary</a></li>
+                    <li><a href="#skills-id">Skills</a></li>
+                    <li><a href="#code-id">Code examples</a></li>
+                    <li><a href="#education-id">Education and courses</a></li>
+                    <li><a href="#langs-id">Languages</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-body">
+                <div class="left">
+                    <figure class="picture">
+                        <p><img src="assets/img/picture.jpg" alt="Photo"></p>
+                    </figure>
+                    <article id="contacts-id" class="contacts">
+                        <h2>My contacts</h2>
+                        <ul>
+                            <li class="email">Email: <a href="lebedev.023046@gmail.com">lebedev.023046@gmail.com</a></li>
+                            <li class="phone">Phone: +375 44 799-79-94</li>
+                            <li class="github">GitHub: <a href="https://github.com/Lebedev-023046">Lebedev-023046</a></li>
+                            <li class="linkedin">LinkedIn: <a href="https://www.linkedin.com/in/dmitry-lebedev-023046/">Dmitry Lebedev</a></li>
+                            <li class="discord">Discord: Lebedev-023046#9826</li>
+                        </ul>
+                    </article>
+                    <article id="skills-id" class="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li class="html">HTML</li>
+                            <li class="css">CSS</li>
+                            <li class="python">Python + django</li>
+                            <li class="git">Git</li>
+                            <li class="editors">Editors: VS Code, PyCharm</li>
+                        </ul>
+                    </article>
+                    <article id="code-id" class="code-exes">
+                        <h2>Code examples</h2>
+                        <pre>
+                            <code>
+    def binary_search(list, item):
+    low = 0
+    high = len(list)-1
+    while low &lt;= high:
+        mid = (low + high) // 2
+        guess = list[mid]
+        if guess == item: 
+            return mid
+        elif guess &lt; item:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return None
+                            </code>
+                        </pre>
+                    </article>
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <div class="common">
+                            <span class="name">Dmitry Lebedev</span>
+                            <br>
+                            <span class="position">Future Front-end developer</span>
+                        </div>
+                    </div>
+ 
+                    <article id="summary-id" class="about-me">
+                        <h2>About me</h2>
+                        <p>I have basic experience with python backend development and am working on another project in this area.
+                            But now the main task is to study the basics of the frontend for its implementation in future projects.
+                            I enjoy programming. Moreover I don't like superficial work without understanding the main logic of
+                            the technology. And I hope that by the end of the course I will be experienced enough to be a perfect
+                            employee for it-companies.
+                        </p>
+                    </article>
+                    <article id="education-id" class="education">
+                        <h2>Education and courses</h2>
+                        <ul>
+                            <li>Belarussian State University, 2020-2024
+                                <ul>
+                                    <li>perspective bachelor's degree</li>
+                                </ul>
+                            </li>
+                            <li>Fundamentals of Computer Science (it-academy)</li>
+                            <li>The basics of HTML and CSS(it-academy)</li>
+                            <li>Comprehensive course in developing web applications with Python(it-academy)
+                                <ul>
+                                    <li>Project example:
+                                        <ul class="blog">
+                                            <li><a href="https://github.com/Lebedev-023046/django-book">Blog</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article id="langs-id" class="langs">
+                        <h2>Languages</h2>
+                        <ul>
+                            <li>Russian</li>
+                            <li>Belarussian</li>
+                            <li>English
+                                <ul>
+                                    <li>Intermediate</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+        </main>
+        <footer>
+            <div class="rsschool">
+                <a href="https://rs.school/" target="blank"><img src="assets/logo/rs_school_js.svg" alt="rsschool"></a>
+            </div>
+            <div class="github">
+                <a href="https://github.com/Lebedev-023046" target="blank"><img src="assets/logo/github.svg" alt=""></a>
+            </div>
+            <div class="year">
+                <p><b>Created in 2021</b></p>
+            </div>
+        </footer>
+        
+        
+    </div>
 </body>
 </html>

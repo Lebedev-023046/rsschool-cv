@@ -13,7 +13,7 @@ html {
 
 body {
     height: 100%;
-    max-width: 1024px;
+    max-width: 1200px;
     margin: auto;
     background-color: blanchedalmond;
 }
@@ -34,8 +34,8 @@ body {
 }
 
 .rsschool img {
-    width: 450px;
-    height: 150px;
+    width: auto;
+    height: 75px;
 }
 
 .picture p {
@@ -53,7 +53,7 @@ code {
 .left {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 32%;
     background-color: rgb(30, 81, 105);
     color: rgb(185, 245, 226);
     border: 1px solid rgb(30, 81, 105);
@@ -63,7 +63,7 @@ code {
 .right {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 68%;
     padding: 0px 50px 0px 50px;
     background-color: rgb(185, 245, 226);
     color: rgb(30, 81, 105);
@@ -76,8 +76,8 @@ header {
 
 .menu ul { 
     display: flex;
-    justify-content: space-around;
     list-style: none;
+    justify-content: center;
 }
 
 .menu a {
@@ -85,7 +85,7 @@ header {
     padding: 7px;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 22.4px;
     color: rgb(30, 81, 105);
     transition: .5s;
 }
@@ -132,7 +132,8 @@ header {
 .code-exes h2, 
 .langs h2, 
 .about-me h2, 
-.education h2 {
+.education h2,
+.projects h2 {
     text-transform: uppercase;
     text-align: center;
     padding: 12px 0px 12px 0px;
@@ -184,6 +185,12 @@ header {
     padding-left: 25px;
 } 
 
+.skills .js {
+    background-image: url("assets/icons/js.svg");
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
 .skills .python {
     background-image: url("assets/icons/python.svg");
     background-repeat: no-repeat;
@@ -227,6 +234,33 @@ pre {
     padding: 0px 15px 15px 30px;
 }
 
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ol > li {
+    margin: 15px;
+    list-style: none;
+}
+
+ol > li > div > h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.scale {
+    width: 320px;
+    height: 170px;
+    transition: .3s;
+}
+
+.scale:hover {
+    transform: scale(1.1);
+}
+
+
 .education ul ul {
     padding: 0px 15px 0px 30px;
 }
@@ -245,12 +279,17 @@ pre {
 
 /* FOOTER */
 footer {
-    display: flex;
-    justify-content: space-between;
+    padding: 0px 20px;
     background-color: rgb(139, 226, 222);
     border: 1px solid rgb(139, 226, 222);
 }
 
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(139, 226, 222);
+    border: 1px solid rgb(139, 226, 222);
+}
 
 .year {
     font-size: 30px;
